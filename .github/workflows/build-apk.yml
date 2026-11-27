@@ -1,0 +1,59 @@
+name: Build Wild Drives APK
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Gradle 8.11.1
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+
+      - name: Install Android SDK 35
+        shell: bash
+        run: |
+          set +o pipefail
+          yes | sdkmanager --licenses > /dev/null
+          set -o pipefail
+          sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+
+      - name: Verify offline meshes and JavaScript
+        run: python3 scripts/verify_assets.py
+
+      - name: Build signed debug APK
+        run: gradle --no-daemon :app:assembleDebug
+
+      - name: Verify packaged game and APK signature
+        shell: bash
+        run: |
+          mkdir -p dist
+          cp app/build/outputs/apk/debug/app-debug.apk dist/WildDrives-v14-debug.apk
+          python3 scripts/verify_assets.py --apk dist/WildDrives-v14-debug.apk
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose dist/WildDrives-v14-debug.apk
+          (cd dist && sha256sum WildDrives-v14-debug.apk > SHA256SUMS.txt)
+
+      - name: Upload installable APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: WildDrives-v14-APK
+          path: dist/
+          if-no-files-found: error
+          retention-days: 30
