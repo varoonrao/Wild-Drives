@@ -1,0 +1,51 @@
+{
+  "mercedes": {
+    "origin": "reference-built, smoothed geometry; not original",
+    "bodyTriangles": 28464,
+    "wheelTriangles": 9084,
+    "totalTriangles": 64800,
+    "sha256": "866e8446cdb4c8d9899a298e1c308f7df3a00cc646174bb78d65ccc94c582ad6"
+  },
+  "challenger": {
+    "origin": "reference-built, smoothed geometry; not original",
+    "bodyTriangles": 26644,
+    "wheelTriangles": 9084,
+    "totalTriangles": 62980,
+    "sha256": "22ad0cccc15662ecc9845c3223a1030c77f8d31fbbe13c2e7e000a9c4e9e0b24"
+  },
+  "aventador": {
+    "origin": "reference-built, smoothed geometry; not original",
+    "bodyTriangles": 28080,
+    "wheelTriangles": 8844,
+    "totalTriangles": 63456,
+    "sha256": "819cc6aca1640a7eec0756f555c10a25eade6bc0e59c7db66e4a47e904050744"
+  },
+  "mustang": {
+    "origin": "reference-built, smoothed geometry; not original",
+    "bodyTriangles": 27484,
+    "wheelTriangles": 8844,
+    "totalTriangles": 62860,
+    "sha256": "116e25a7f89fcf183108493324b6051a95cc6fe6fb5623258da1af92b55c04ca"
+  },
+  "mountainbike": {
+    "origin": "reference-built, smoothed geometry; not original",
+    "bodyTriangles": 2760,
+    "wheelTriangles": 4292,
+    "totalTriangles": 11344,
+    "sha256": "c134936c5b02095d784da4f127ba805fb17f869ce5075951e8fee25dbcfdffd4"
+  },
+  "ducati": {
+    "origin": "reference-built, smoothed geometry; not original",
+    "bodyTriangles": 24940,
+    "wheelTriangles": 8844,
+    "totalTriangles": 42628,
+    "sha256": "44b5ecb89a254a11e0fe7e82f8f78622045a2c209ae2598160cbf5ada914fd64"
+  },
+  "honda": {
+    "origin": "reference-built, smoothed geometry; not original",
+    "bodyTriangles": 23620,
+    "wheelTriangles": 9948,
+    "totalTriangles": 43516,
+    "sha256": "fcaca7847a2ff489a91f5401d458b0e6c4577101caf69d61c881ee56fa5f7246"
+  }
+}

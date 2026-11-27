@@ -1,0 +1,79 @@
+[
+  {
+    "id": "mercedes",
+    "name": "Mercedes GLS 580",
+    "kind": "truck",
+    "length": 5.21,
+    "source": "https://free3d.com/3d-model/mercedes-benz-gls-580-2020-83444.html",
+    "author": "goldenflies",
+    "license": "Personal Use License",
+    "formats": "BLEND / FBX / OBJ",
+    "archive": "mercedes-benz-gls-580-2020.zip"
+  },
+  {
+    "id": "challenger",
+    "name": "Dodge Challenger",
+    "kind": "sport",
+    "length": 5.02,
+    "source": "https://free3d.com/3d-model/car-model-574039.html",
+    "author": "farzetkiadsiz",
+    "license": "Personal Use License",
+    "formats": "BLEND",
+    "archive": "challenger.zip"
+  },
+  {
+    "id": "aventador",
+    "name": "Lamborghini Aventador",
+    "kind": "sport",
+    "length": 4.78,
+    "source": "https://free3d.com/3d-model/lamborghini-aventador-sport-44634.html",
+    "author": "ghostwarrior6704",
+    "license": "Personal Use License",
+    "formats": "OBJ / DAE",
+    "archive": "8hd2hnno0ayo-aventador_sport.zip"
+  },
+  {
+    "id": "mustang",
+    "name": "Ford Mustang GT 500",
+    "kind": "sport",
+    "length": 4.83,
+    "source": "https://free3d.com/3d-model/ford-mustang_gt-500-193364.html",
+    "author": "mfaprodesign",
+    "license": "Personal Use License",
+    "formats": "OBJ / MAX / C4D",
+    "archive": "mustang_gt.rar"
+  },
+  {
+    "id": "mountainbike",
+    "name": "Pacific Invert MTB",
+    "kind": "cycle",
+    "length": 1.8,
+    "source": "https://free3d.com/3d-model/mountain-bike-pacific-invert-560146.html",
+    "author": "zakardian",
+    "license": "Personal Use License",
+    "formats": "BLEND / FBX / OBJ",
+    "archive": "biycle_pacific_invert_6.0.zip"
+  },
+  {
+    "id": "ducati",
+    "name": "Ducati Streetfighter V4 S",
+    "kind": "bike",
+    "length": 2.1,
+    "source": "https://sketchfab.com/3d-models/2024-ducati-streetfighter-v4-s-c501252f8af64c559bf91dc306c3a550",
+    "author": "OUTPISTON",
+    "license": "CC BY-NC-SA; attribution required",
+    "formats": "GLB / glTF if offered",
+    "archive": "Download from Sketchfab"
+  },
+  {
+    "id": "honda",
+    "name": "Honda Concept Adventure",
+    "kind": "bike",
+    "length": 2.25,
+    "source": "https://sketchfab.com/3d-models/honda-concept-adventure-game-ready-dc0f55ca743f415d83a7dd316fc1e49f",
+    "author": "Verify on listing",
+    "license": "Unverified \u2014 check before importing",
+    "formats": "GLB / glTF if offered",
+    "archive": "Download from Sketchfab"
+  }
+]

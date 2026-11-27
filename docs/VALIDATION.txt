@@ -1,0 +1,3 @@
+All seven models contain finite triangulated vertex arrays with unique SHA-256 hashes. All seven rendered in software OpenGL ES with no GL errors. Chromium UI tests with mocked WebGL passed all seven vehicle selections, starting wheel clearance, rainy driving, close modal, rendering profile and reverse selection. JavaScript syntax check passed. Actual full-game browser rendering and Samsung S26 performance are not established by these tests.
+
+V14: Showroom artwork embedded as offline WebP. Curved glazing, improved tyre normals, compatible seam smoothing and modified paint shading. All four shader programs compiled and linked in software OpenGL ES. New Garage shortcut passed mocked browser selection tests.
